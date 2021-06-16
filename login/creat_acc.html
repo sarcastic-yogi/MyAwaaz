@@ -42,20 +42,7 @@
     </nav>
   </header>
 
-    <div class="container-md text-center mt-xl-5">
-      <a href="#" class="fb btnlog">
-        <i class="fa fa-facebook fa-fw"></i> Sign Up with Facebook
-       </a>
-      <a href="#" class="linkedin btnlog">
-        <i class="fa fa-linkedin fa-fw"></i> Sign Up with LinkedIn
-      </a>
-      <a href="#" class="google btnlog"><i class="fa fa-google fa-fw">
-        </i> Sign Up with Google
-      </a>
-    </>
-    <div class="text-center">
-      <hr><p><b>OR</b></p><hr>
-    </div>
+    
     
       <form class="crt_acc_frm">
         <span class="crt_acc_title">
@@ -66,20 +53,22 @@
         </div>
         <div class="input-out" >
           <input class="input-in" type="text" name="name" placeholder="First name" required>
-          <input class="input-in crsb" type="text" name="name" placeholder="Last name" required>
+        </div>
+        <div class="input-out">
+          <input class="input-in" type="text" name="name" placeholder="Last name" required>
         </div>
         <div class="input-out " >
           <input class="input-in" type="email" name="mail_id" placeholder="Email" required>
         </div>
         <div class="input-out " >
           <input class="input-in" type="tel" name="contact_no" placeholder="Mobile no." required>
-          <!-- <input class="input-in" type="text" name="gender" placeholder="Select Gender" required> -->
+        </div>
+        <div class="input-out">
           <select class="input-in crs"  type="gender" name="gender" required>
             <option value="M">Male</option>
             <option value="F">Female</option>
             <option selected="Select" value="s">Select Gender</option>
           </select>
-        
         </div>
         <div class="input-out " >
           <input class="input-in" type="text" name="organization" placeholder="Organization" required>
@@ -90,17 +79,29 @@
         <div class="input-out " >
           <input class="input-in" type="password" name="password" placeholder="Password" minlength="8" required>
         </div>
-        <div class="btn">
-          <button class="btn_in" onclick="alert('Sorry,\nSince,we are not connected to database right now.\nWe cant process your request\nPlease try again after some time')">
+        <div class="container text-center">
+          <button class="btn_in m-2" onclick="alert('Sorry,\nSince,we are not connected to database right now.\nWe cant process your request\nPlease try again after some time')">
             Submit
           </button>
-            <input class="btn_in" type="reset" >
+            <input class="btn_in m-2" type="reset" >
         </div>
         </div>
       </form>
-</div>  
-</div>
-</div>
+      <div class="text-center">
+        <p><b>OR</b></p><hr>
+      </div>
+      <div class="container-md text-center mt-xl-5">
+        <a href="#" class="fb btnlog">
+          <i class="fa fa-facebook fa-fw"></i> Sign Up with Facebook
+         </a>
+        <a href="#" class="linkedin btnlog">
+          <i class="fa fa-linkedin fa-fw"></i> Sign Up with LinkedIn
+        </a>
+        <a href="#" class="google btnlog"><i class="fa fa-google fa-fw">
+          </i> Sign Up with Google
+        </a>
+      </div>
+      
 <script src="/js/bootstrap.js"></script>
 </body>
 </html>
